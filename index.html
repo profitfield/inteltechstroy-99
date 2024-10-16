@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ООО "Интелтехстрой-99"</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header>
+        <div class="header-container">
+            <div class="logo">ИТС-99</div>
+            <nav id="navbar">
+                <ul>
+                    <li><a href="#home" class="menu-item">Главная</a></li>
+                    <li><a href="#about" class="menu-item">О компании</a></li>
+                    <li><a href="#services" class="menu-item">Услуги</a></li>
+                    <li><a href="#projects" class="menu-item">Проекты</a></li>
+                    <li><a href="#clients" class="menu-item">Наши заказчики</a></li>
+                    <li><a href="#contact" class="menu-item">Контакты</a></li>
+                </ul>
+            </nav>
+            <button id="menu-toggle" class="menu-button"><i class="fas fa-bars"></i></button>
+        </div>
+    </header>
+
+    <section id="home" class="section hero">
+        <div class="container">
+            <div class="slider">
+                <div class="slide" style="background-image: url('images/slider1.jpg');">
+                    <div class="text-container">
+                        <h1>ООО "Интелтехстрой-99"</h1>
+                        <p>Успешно работает на рынке строительных услуг Санкт-Петербурга и Северо-Западного региона России с 1993 года.</p>
+                        <button class="cta-button">Узнать больше</button>
+                    </div>
+                </div>
+                <div class="slide" style="background-image: url('images/slider2.jpg');">
+                    <div class="text-container">
+                        <h1>Качественные услуги</h1>
+                        <p>Мы гарантируем высокое качество и соблюдение сроков выполнения работ.</p>
+                        <button class="cta-button">Узнать больше</button>
+                    </div>
+                </div>
+                <div class="slide" style="background-image: url('images/slider3.jpg');">
+                    <div class="text-container">
+                        <h1>Надежные решения</h1>
+                        <p>Наш опыт и знания позволяют нам предлагать надежные решения для ваших проектов.</p>
+                        <button class="cta-button">Узнать больше</button>
+                    </div>
+                </div>
+                <!-- Стрелки для навигации -->
+                <div class="slider-arrow left-arrow" onclick="prevSlide()">&#10094;</div>
+                <div class="slider-arrow right-arrow" onclick="nextSlide()">&#10095;</div>
+            </div>
+        </div>
+    </section>       
+
+    <section id="services" class="section">
+        <div class="container">
+            <div class="services-container">
+                <div class="service-item">
+                    <img src="images/service1.jpg" alt="Промышленное строительство">
+                    <h3>Промышленное строительство</h3>
+                    <p>Мы предлагаем комплексные решения в области промышленного строительства, включая проектирование и строительство заводов и фабрик.</p>
+                </div>
+                <div class="service-item">
+                    <img src="images/service2.jpg" alt="Строительство и реконструкция">
+                    <h3>Строительство и реконструкция</h3>
+                    <p>Наша команда профессионалов занимается строительством и реконструкцией жилых и коммерческих объектов.</p>
+                </div>
+                <div class="service-item">
+                    <img src="images/service3.jpg" alt="Проектирование">
+                    <h3>Проектирование</h3>
+                    <p>Предлагаем услуги проектирования для различных типов зданий, с учетом всех современных стандартов и требований.</p>
+                </div>
+                <div class="service-item">
+                    <img src="images/service4.jpg" alt="Технический инжиниринг">
+                    <h3>Технический инжиниринг</h3>
+                    <p>Обеспечиваем технический инжиниринг на всех этапах проекта, от концепции до реализации.</p>
+                </div>
+                <div class="service-item">
+                    <img src="images/service5.jpg" alt="Благоустройство">
+                    <h3>Благоустройство</h3>
+                    <p>Проводим работы по благоустройству территорий, включая ландшафтный дизайн и озеленение.</p>
+                </div>
+            </div>
+        </div>
+    </section>    
+    
+    <section id="data-icons" class="section">
+        <div class="container">
+            <div class="icons-container">
+                <div class="icon-item">
+                    <i class="fas fa-clipboard-check"></i>
+                    <h3>150+</h3>
+                    <p>Выполненных работ</p>
+                </div>
+                <div class="icon-item">
+                    <i class="fas fa-smile"></i>
+                    <h3>1000+</h3>
+                    <p>Довольных клиентов</p>
+                </div>
+                <div class="icon-item">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <h3>20+</h3>
+                    <p>Городов работ</p>
+                </div>
+                <div class="icon-item">
+                    <i class="fas fa-dollar-sign"></i>
+                    <h3>50 млн.</h3>
+                    <p>Бюджет работ</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <footer>
+        <div class="container">
+            <div class="footer-icons">
+                <a href="mailto:inteltehstroy99@mail.ru"><i class="fas fa-envelope"></i></a>
+                <a href="https://t.me/username" target="_blank"><i class="fab fa-telegram"></i></a>
+                <a href="https://wa.me/79123456789" target="_blank"><i class="fab fa-whatsapp"></i></a>
+            </div>
+            <p>© <span id="currentYear"></span> ООО "Интелтехстрой-99". Все права защищены.</p>
+        </div>
+    </footer>    
+
+    <!-- Всплывающее меню -->
+    <!-- Всплывающее меню -->
+<div id="popup-menu" class="popup-menu">
+    <button id="close-popup" class="close-button">&times;</button>
+    <div class="popup-content" id="popup-content"></div>
+</div>
+
+<div id="about-popup" class="popup-menu">
+    <button class="close-button">&times;</button>
+    <div class="popup-content">
+        <h2>О компании</h2>
+        <p>ООО "Интелтехстрой-99" успешно работает на рынке строительных услуг Санкт-Петербурга и Северо-Западного региона России с 1993 года.</p>
+    </div>
+</div>
+
+<div id="projects-popup" class="popup-menu">
+    <button class="close-button">&times;</button>
+    <div class="popup-content">
+        <h2>Проекты</h2>
+        <div class="gallery">
+            <div class="gallery-item">
+                <div class="overlay">
+                    <img src="images/project1.jpg" alt="Проект 1">
+                    <div class="text">
+                        Строительство упаковочной фабрики общей площадью 7190 м²; с административно-бытовыми помещениями площадью 685 м²; фасады 7800 м². Бюджет проекта – 45 млн. $
+                    </div>
+                </div>
+                <p>Упаковочная фабрика «Амкор Ренч»</p>
+            </div>            
+            <div class="gallery-item">
+                <div class="overlay">
+                    <img src="images/project2.jpg" alt="Проект 2">
+                    <div class="text">Сервисный центр по обслуживанию и ремонту большегрузного транспорта общей площадью 5582 м²; с административно-бытовыми помещениями площадью 680 м². Бюджет проекта – 154 млн. $</div>
+                </div>
+                <p>Сервисный центр «SCANIA»</p>
+            </div>
+            <div class="gallery-item">
+                <div class="overlay">
+                    <img src="images/project3.jpg" alt="Проект 3">
+                    <div class="text">Реконструкция помещений 1000 м². Бюджет проекта – 12 млн. $</div>
+                </div>
+                <p>Машиностроительный завод «Таурас Феникс»</p>
+            </div>
+            <div class="gallery-item">
+                <div class="overlay">
+                    <img src="images/project4.jpg" alt="Проект 4">
+                    <div class="text">Комплексный капитальный ремонт (реконструкция) производственных цехов и бытовых помещений. 6500 м². Бюджет проекта – 38 млн. $</div>
+                </div>
+                <p>Завод «Электроаппарат»</p>
+            </div>
+            <div class="gallery-item">
+                <div class="overlay">
+                    <img src="images/project5.jpg" alt="Проект 5">
+                    <div class="text">Завод по производству лекарственных средств. Общая площадь 15000 м². Бюджет проекта – 180 млн. $</div>
+                </div>
+                <p>Завод по производству лекарственных средств им. Академика В.П. Филатова</p>
+            </div>
+            <div class="gallery-item">
+                <div class="overlay">
+                    <img src="images/project6.jpg" alt="Проект 6">
+                    <div class="text">Строительство складского комплекса Henkel: Общая площадь 6500 м². Бюджет проекта – 75 млн. $</div>
+                </div>
+                <p>Строительство складского комплекса Henkel</p>
+            </div>
+            <div class="gallery-item">
+                <div class="overlay">
+                    <img src="images/project7.jpg" alt="Проект 7">
+                    <div class="text">Строительство логистического терминала ЗАО «Вельц»: Общая площадь 7200 м². Бюджет проекта – 46 млн. $</div>
+                </div>
+                <p>Строительство логистического терминала ЗАО «Вельц»</p>
+            </div>
+            <div class="gallery-item">
+                <div class="overlay">
+                    <img src="images/project8.jpg" alt="Проект 8">
+                    <div class="text">Коттеджный поселок п. Воейково: Общая площадь 1260 м². Бюджет проекта – 23 млн. $</div>
+                </div>
+                <p>Коттеджный поселок п. Воейково</p>
+            </div>
+            <div class="gallery-item">
+                <div class="overlay">
+                    <img src="images/project9.jpg" alt="Проект 9">
+                    <div class="text">Торговый комплекс «Метизы»: Общая площадь 70683 м². Бюджет проекта – 50 млн. $</div>
+                </div>
+                <p>Торговый комплекс «Метизы»</p>
+            </div>
+            <div class="gallery-item">
+                <div class="overlay">
+                    <img src="images/project10.jpg" alt="Проект 10">
+                    <div class="text">Комплекс храма «Святой Троицы»: Значимый социальный проект.</div>
+                </div>
+                <p>Комплекс храма «Святой Троицы»</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div id="clients-popup" class="popup-menu">
+    <button class="close-button">&times;</button>
+    <div class="popup-content">
+        <h2>Наши заказчики</h2>
+        <ul>
+            <li>ООО «АуРус»</li>
+            <li>ООО «Амкор Ренч Новгород»</li>
+            <li>ООО «Таурас Феникс»</li>
+            <li>ОАО «Электроаппарат»</li>
+            <li>ООО «БЛОК Россия»</li>
+            <li>ООО «Хенкель Рус»</li>
+            <li>ООО «ГСК»</li>
+            <li>ООО «СтройМет»</li>
+        </ul>
+    </div>
+</div>
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>
