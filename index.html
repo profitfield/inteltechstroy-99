@@ -1,0 +1,574 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="ИТС-99 - Ведущая строительная компания. Промышленное строительство, проектирование и инжиниринг">
+    <title>ИТС-99 | Строительная компания</title>
+    
+    <!-- Шрифты -->
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Иконки -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    
+    <!-- AOS анимации -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+    
+    <!-- Swiper слайдер -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/8.4.2/swiper-bundle.css">
+    
+    <!-- Наши стили -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Прелоадер -->
+    <div class="preloader">
+        <div class="loader"></div>
+    </div>
+
+    <!-- Шапка сайта -->
+    <header class="header-container">
+        <div class="header-content">
+            <div class="logo">
+                <img src="images/logo.png" alt="Логотип ИТС-99">
+            </div>
+            
+            <nav class="nav-menu">
+                <ul class="nav-list">
+                    <li><a href="#home" class="menu-item active">Главная</a></li>
+                    <li><a href="#about" class="menu-item">О компании</a></li>
+                    <li><a href="#services" class="menu-item">Услуги</a></li>
+                    <li><a href="#projects" class="menu-item">Проекты</a></li>
+                    <li><a href="#clients" class="menu-item">Заказчики</a></li>
+                    <li><a href="#contact" class="menu-item">Контакты</a></li>
+                </ul>
+            </nav>
+
+            <button class="menu-toggle" aria-label="Меню">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </header>
+    <section id="home" class="hero-section">
+        <div class="swiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <div class="slide-image" style="background-image: url('images/slider1.jpg')"></div>
+                    <div class="slide-content">
+                        <h1 data-aos="fade-up">Строим будущее вместе</h1>
+                        <p data-aos="fade-up" data-aos-delay="200">Профессиональные решения для вашего бизнеса</p>
+                        <a href="#contact" class="cta-button" data-aos="fade-up" data-aos-delay="400">
+                            <span class="cta-text">Связаться с нами</span>
+                            <span class="cta-icon">
+                                <i class="fas fa-arrow-right"></i>
+                            </span>
+                        </a>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="slide-image" style="background-image: url('images/slider2.jpg')"></div>
+                    <div class="slide-content">
+                        <h1 data-aos="fade-up">Качество и надежность</h1>
+                        <p data-aos="fade-up" data-aos-delay="200">Более 20 лет успешной работы</p>
+                        <a href="#contact" class="cta-button" data-aos="fade-up" data-aos-delay="400">
+                            <span class="cta-text">Связаться с нами</span>
+                            <span class="cta-icon">
+                                <i class="fas fa-arrow-right"></i>
+                            </span>
+                        </a>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="slide-image" style="background-image: url('images/slider3.jpg')"></div>
+                    <div class="slide-content">
+                        <h1 data-aos="fade-up">Инновационный подход</h1>
+                        <p data-aos="fade-up" data-aos-delay="200">Современные технологии строительства</p>
+                        <a href="#contact" class="cta-button" data-aos="fade-up" data-aos-delay="400">
+                            <span class="cta-text">Связаться с нами</span>
+                            <span class="cta-icon">
+                                <i class="fas fa-arrow-right"></i>
+                            </span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <!-- Добавляем навигацию -->
+            <div class="swiper-pagination"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+        </div>
+    </section>
+    <!-- Секция услуг -->
+    <section id="services" class="services-section">
+        <div class="container">
+            <h2 class="section-title" data-aos="fade-up">Наши услуги</h2>
+            <div class="services-grid">
+                <div class="service-card" data-aos="fade-up">
+                    <div class="service-icon">
+                        <i class="fas fa-industry"></i>
+                    </div>
+                    <div class="service-content">
+                        <h3>Промышленное строительство</h3>
+                        <p>Полный цикл строительства промышленных объектов: заводов, фабрик, складских комплексов. Включает проектирование, строительство и ввод в эксплуатацию.</p>
+                        <a href="#contact" class="service-link">
+                            <span>Подробнее</span>
+                            <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+    
+                <div class="service-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="service-icon">
+                        <i class="fas fa-building"></i>
+                    </div>
+                    <div class="service-content">
+                        <h3>Строительство и реконструкция</h3>
+                        <p>Строительство новых объектов и реконструкция существующих зданий с учетом современных требований и технологий.</p>
+                        <a href="#contact" class="service-link">
+                            <span>Подробнее</span>
+                            <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+    
+                <div class="service-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="service-icon">
+                        <i class="fas fa-drafting-compass"></i>
+                    </div>
+                    <div class="service-content">
+                        <h3>Проектирование</h3>
+                        <p>Разработка проектной документации для различных типов зданий и сооружений с учетом всех норм и требований.</p>
+                        <a href="#contact" class="service-link">
+                            <span>Подробнее</span>
+                            <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+    
+                <div class="service-card" data-aos="fade-up">
+                    <div class="service-icon">
+                        <i class="fas fa-cogs"></i>
+                    </div>
+                    <div class="service-content">
+                        <h3>Технический инжиниринг</h3>
+                        <p>Комплексное техническое сопровождение проектов, включая анализ, планирование и контроль всех этапов строительства.</p>
+                        <a href="#contact" class="service-link">
+                            <span>Подробнее</span>
+                            <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+    
+                <div class="service-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="service-icon">
+                        <i class="fas fa-tree"></i>
+                    </div>
+                    <div class="service-content">
+                        <h3>Благоустройство</h3>
+                        <p>Комплексное благоустройство территорий, включая ландшафтный дизайн, озеленение и создание инфраструктуры.</p>
+                        <a href="#contact" class="service-link">
+                            <span>Подробнее</span>
+                            <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+    
+                <div class="service-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="service-icon">
+                        <i class="fas fa-tasks"></i>
+                    </div>
+                    <div class="service-content">
+                        <h3>Управление проектами</h3>
+                        <p>Профессиональное управление строительными проектами любой сложности, контроль сроков и бюджета.</p>
+                        <a href="#contact" class="service-link">
+                            <span>Подробнее</span>
+                            <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Секция заказчиков -->
+    <section id="clients" class="clients-section">
+        <div class="container">
+            <h2 class="section-title" data-aos="fade-up">Наши заказчики</h2>
+            <div class="clients-description" data-aos="fade-up">
+                <p>Нам доверяют ведущие компании различных отраслей</p>
+            </div>
+            
+            <div class="clients-grid">
+                <div class="client-card" data-aos="fade-up">
+                    <div class="client-logo">
+                        <img src="images/client1.jpg" alt="ООО «АуРус»">
+                    </div>
+                    <div class="client-info">
+                        <h3>ООО «АуРус»</h3>
+                        <p>Крупная промышленная компания, специализирующаяся на производстве автомобильных компонентов.</p>
+                    </div>
+                </div>
+    
+                <div class="client-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="client-logo">
+                        <img src="images/client2.jpg" alt="ООО «Амкор Ренч Новгород»">
+                    </div>
+                    <div class="client-info">
+                        <h3>ООО «Амкор Ренч Новгород»</h3>
+                        <p>Международная компания по производству упаковочных материалов.</p>
+                    </div>
+                </div>
+    
+                <div class="client-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="client-logo">
+                        <img src="images/client3.jpg" alt="ООО «Таурас Феникс»">
+                    </div>
+                    <div class="client-info">
+                        <h3>ООО «Таурас Феникс»</h3>
+                        <p>Ведущий производитель упаковочного оборудования в России.</p>
+                    </div>
+                </div>
+    
+                <div class="client-card" data-aos="fade-up">
+                    <div class="client-logo">
+                        <img src="images/client4.jpg" alt="ОАО «Электроаппарат»">
+                    </div>
+                    <div class="client-info">
+                        <h3>ОАО «Электроаппарат»</h3>
+                        <p>Производитель электротехнического оборудования.</p>
+                    </div>
+                </div>
+    
+                <div class="client-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="client-logo">
+                        <img src="images/client5.jpg" alt="ООО «БЛОК Россия»">
+                    </div>
+                    <div class="client-info">
+                        <h3>ООО «БЛОК Россия»</h3>
+                        <p>Международная инжиниринговая компания.</p>
+                    </div>
+                </div>
+    
+                <div class="client-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="client-logo">
+                        <img src="images/client6.jpg" alt="ООО «Хенкель Рус»">
+                    </div>
+                    <div class="client-info">
+                        <h3>ООО «Хенкель Рус»</h3>
+                        <p>Российское подразделение международного концерна Henkel.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Секция контактов -->
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <h2 class="section-title" data-aos="fade-up">Свяжитесь с нами</h2>
+            
+            <div class="contact-wrapper">
+                <!-- Контактная информация -->
+                <div class="contact-info" data-aos="fade-right">
+                    <div class="info-card">
+                        <div class="info-header">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <h3>Адрес</h3>
+                        </div>
+                        <p>Санкт-Петербург, ул. Примерная, д. 1</p>
+                    </div>
+    
+                    <div class="info-card">
+                        <div class="info-header">
+                            <i class="fas fa-phone"></i>
+                            <h3>Телефон</h3>
+                        </div>
+                        <p><a href="tel:+71234567890">+7 (123) 456-78-90</a></p>
+                    </div>
+    
+                    <div class="info-card">
+                        <div class="info-header">
+                            <i class="fas fa-envelope"></i>
+                            <h3>Email</h3>
+                        </div>
+                        <p><a href="mailto:inteltehstroy99@mail.ru">inteltehstroy99@mail.ru</a></p>
+                    </div>
+    
+                    <div class="info-card">
+                        <div class="info-header">
+                            <i class="fas fa-clock"></i>
+                            <h3>Режим работы</h3>
+                        </div>
+                        <p>Пн-Пт: 9:00 - 18:00<br>Сб-Вс: Выходной</p>
+                    </div>
+                </div>
+    
+                <!-- Форма обратной связи -->
+                <div class="contact-form-wrapper" data-aos="fade-left">
+                    <form class="contact-form" id="contactForm">
+                        <div class="form-header">
+                            <h3>Отправить сообщение</h3>
+                            <p>Заполните форму, и мы свяжемся с вами в ближайшее время</p>
+                        </div>
+    
+                        <div class="form-group">
+                            <input type="text" id="name" name="name" required>
+                            <label for="name">Ваше имя</label>
+                            <span class="form-line"></span>
+                        </div>
+    
+                        <div class="form-group">
+                            <input type="email" id="email" name="email" required>
+                            <label for="email">Email</label>
+                            <span class="form-line"></span>
+                        </div>
+    
+                        <div class="form-group">
+                            <input type="tel" id="phone" name="phone" required>
+                            <label for="phone">Телефон</label>
+                            <span class="form-line"></span>
+                        </div>
+    
+                        <div class="form-group">
+                            <textarea id="message" name="message" required></textarea>
+                            <label for="message">Сообщение</label>
+                            <span class="form-line"></span>
+                        </div>
+    
+                        <button type="submit" class="submit-button">
+                            <span class="button-text">Отправить</span>
+                            <span class="button-icon">
+                                <i class="fas fa-paper-plane"></i>
+                            </span>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    
+        <!-- Уведомление об успешной отправке -->
+        <div class="notification success-notification" id="successNotification">
+            <i class="fas fa-check-circle"></i>
+            <p>Сообщение успешно отправлено!</p>
+        </div>
+    </section>
+    <!-- Подвал сайта -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <!-- Основная информация -->
+                <div class="footer-main-info">
+                    <div class="footer-logo">
+                        <img src="images/logo.png" alt="Логотип ИТС-99">
+                    </div>
+                    <div class="footer-description">
+                        <p>Профессиональные решения в строительстве с 1999 года</p>
+                    </div>
+                    <div class="footer-contact-info">
+                        <a href="tel:+71234567890" class="footer-contact-item">
+                            <i class="fas fa-phone"></i>
+                            +7 (123) 456-78-90
+                        </a>
+                        <a href="mailto:inteltehstroy99@mail.ru" class="footer-contact-item">
+                            <i class="fas fa-envelope"></i>
+                            inteltehstroy99@mail.ru
+                        </a>
+                        <div class="footer-contact-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            Санкт-Петербург, ул. Примерная, д. 1
+                        </div>
+                    </div>
+                </div>
+    
+                <!-- Быстрые ссылки -->
+                <div class="footer-quick-links">
+                    <h3>Навигация</h3>
+                    <ul>
+                        <li><a href="#home">Главная</a></li>
+                        <li><a href="#about">О компании</a></li>
+                        <li><a href="#services">Услуги</a></li>
+                        <li><a href="#projects">Проекты</a></li>
+                        <li><a href="#clients">Заказчики</a></li>
+                        <li><a href="#contact">Контакты</a></li>
+                    </ul>
+                </div>
+    
+                <!-- Услуги -->
+                <div class="footer-services">
+                    <h3>Наши услуги</h3>
+                    <ul>
+                        <li>Промышленное строительство</li>
+                        <li>Строительство и реконструкция</li>
+                        <li>Проектирование</li>
+                        <li>Технический инжиниринг</li>
+                        <li>Благоустройство</li>
+                    </ul>
+                </div>
+    
+                <!-- Социальные сети -->
+                <div class="footer-social">
+                    <h3>Мы в соцсетях</h3>
+                    <div class="social-links">
+                        <a href="mailto:inteltehstroy99@mail.ru" class="social-link">
+                            <i class="fas fa-envelope"></i>
+                        </a>
+                        <a href="https://t.me/username" target="_blank" class="social-link">
+                            <i class="fab fa-telegram"></i>
+                        </a>
+                        <a href="https://wa.me/79123456789" target="_blank" class="social-link">
+                            <i class="fab fa-whatsapp"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+    
+            <!-- Нижняя часть подвала -->
+            <div class="footer-bottom">
+                <p>&copy; <span id="currentYear">2024</span> ООО "Интелтехстрой-99". Все права защищены.</p>
+            </div>
+        </div>
+    </footer>
+    <!-- Модальное окно О компании -->
+    <div id="about-popup" class="modal">
+        <div class="modal-content">
+            <button class="modal-close">
+                <i class="fas fa-times"></i>
+            </button>
+            
+            <div class="modal-header">
+                <h2>О компании</h2>
+                <div class="modal-header-line"></div>
+            </div>
+    
+            <div class="modal-body">
+                <!-- История компании -->
+                <div class="about-section">
+                    <h3>История компании</h3>
+                    <p>Общество с ограниченной ответственностью «Интелтехстрой-99» — надежный партнер в сфере строительных услуг. Основанная в 1999 году, наша компания накопила более 20 лет опыта в реализации промышленных и коммерческих проектов.</p>
+                </div>
+    
+                <!-- Миссия -->
+                <div class="about-section">
+                    <h3>Наша миссия</h3>
+                    <p>Создавать качественные и долговечные объекты, которые способствуют развитию инфраструктуры и экономики регионов, обеспечивая комфорт и безопасность для людей.</p>
+                </div>
+    
+                <!-- Преимущества -->
+                <div class="about-section">
+                    <h3>Наши преимущества</h3>
+                    <div class="advantages-grid">
+                        <div class="advantage-item">
+                            <div class="advantage-icon">
+                                <i class="fas fa-check-circle"></i>
+                            </div>
+                            <h4>Опыт</h4>
+                            <p>Более 20 лет успешной работы в строительной отрасли</p>
+                        </div>
+    
+                        <div class="advantage-item">
+                            <div class="advantage-icon">
+                                <i class="fas fa-users"></i>
+                            </div>
+                            <h4>Команда</h4>
+                            <p>Высококвалифицированные специалисты с многолетним стажем</p>
+                        </div>
+    
+                        <div class="advantage-item">
+                            <div class="advantage-icon">
+                                <i class="fas fa-cog"></i>
+                            </div>
+                            <h4>Технологии</h4>
+                            <p>Современные технологии и инновационные решения</p>
+                        </div>
+    
+                        <div class="advantage-item">
+                            <div class="advantage-icon">
+                                <i class="fas fa-clock"></i>
+                            </div>
+                            <h4>Сроки</h4>
+                            <p>Строгое соблюдение сроков выполнения работ</p>
+                        </div>
+    
+                        <div class="advantage-item">
+                            <div class="advantage-icon">
+                                <i class="fas fa-shield-alt"></i>
+                            </div>
+                            <h4>Гарантии</h4>
+                            <p>Гарантия качества на все выполненные работы</p>
+                        </div>
+    
+                        <div class="advantage-item">
+                            <div class="advantage-icon">
+                                <i class="fas fa-handshake"></i>
+                            </div>
+                            <h4>Партнерство</h4>
+                            <p>Индивидуальный подход к каждому клиенту</p>
+                        </div>
+                    </div>
+                </div>
+    
+                <!-- Сертификаты -->
+                <div class="about-section">
+                    <h3>Сертификаты и лицензии</h3>
+                    <div class="certificates-info">
+                        <div class="certificate-icon">
+                            <i class="fas fa-certificate"></i>
+                        </div>
+                        <div class="certificate-text">
+                            <p>Компания имеет все необходимые лицензии и сертификаты для осуществления строительной деятельности. Наши специалисты регулярно проходят обучение и повышение квалификации.</p>
+                            <ul>
+                                <li>Лицензия на осуществление строительной деятельности</li>
+                                <li>Сертификаты соответствия ISO 9001</li>
+                                <li>Членство в СРО</li>
+                                <li>Допуски к специальным видам работ</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+    
+                <!-- Подход к работе -->
+                <div class="about-section">
+                    <h3>Наш подход</h3>
+                    <div class="approach-steps">
+                        <div class="step">
+                            <div class="step-number">01</div>
+                            <h4>Анализ проекта</h4>
+                            <p>Тщательное изучение требований и пожеланий заказчика</p>
+                        </div>
+                        <div class="step">
+                            <div class="step-number">02</div>
+                            <h4>Планирование</h4>
+                            <p>Разработка детального плана реализации проекта</p>
+                        </div>
+                        <div class="step">
+                            <div class="step-number">03</div>
+                            <h4>Реализация</h4>
+                            <p>Выполнение работ с соблюдением всех норм и стандартов</p>
+                        </div>
+                        <div class="step">
+                            <div class="step-number">04</div>
+                            <h4>Контроль качества</h4>
+                            <p>Постоянный мониторинг и контроль качества работ</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- Overlay для мобильного меню -->
+    <div class="menu-overlay"></div>
+
+    <main>
+        <!-- Здесь будут остальные секции -->
+    </main>
+
+    <!-- Скрипты -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/8.4.2/swiper-bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
